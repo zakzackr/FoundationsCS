@@ -9,7 +9,7 @@ class Main{
         for (Character c: charList) list.add(c);
 
         Function<Character, Character> swap = c -> {
-            if (Character.toUpperCase(c) == c) return Character.toLowerCase(c);
+            if (Character.isUpperCase(c)) return Character.toLowerCase(c);
             return Character.toUpperCase(c);
         };
 
